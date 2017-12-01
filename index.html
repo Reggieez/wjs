@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<!-- Emmet语法 meta:compat -->
+	<!-- 文档兼容模式兼容声明 表示在IE浏览器下使用最新的标准渲染当前文档 -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<!-- Emmet语法 meta:vp -->
+	<!-- 移动端页面视口设置 表示在移动端页面的宽度为设备的宽度 并不缩放 -->
+	<!-- inital-scale:初始化缩放   user-scalable：是否允许用户自行缩放(yes/no;1/0) -->
+	<title>微金所</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--[if lt IE 9]>
+		<script src="lib/html5shiv/min.js"></script>
+		<script src="lib/respond/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- 头部区域 -->
+	<header id="header">
+		<div class="topbar hidden-xs hidden-sm">
+			<div class="container">
+			<!-- Bootstrap 需要为页面内容和栅格系统包裹一个 .container 容器 -->
+				<div class="row">
+					<div class="col-md-2 text-center">
+						<a href="#" class="mobile-link">
+							<i class="icon icon-mobilephone"></i>
+							<span>手机微金所</span>
+							<i class="glyphicon glyphicon-chevron-down"></i>
+							<img src="img/c_06.jpg" width="120" height="136" alt="扫一扫">
+						</a>
+					</div>
+					<div class="col-md-5">
+						<i class="icon icon-telephone"></i>
+						<span>4006-89-4006(服务时间：9：00-21：00）</span>
+					</div>
+					<div class="col-md-2">
+						<a href="#">常见问题</a>
+						<a href="#"> 财富登录</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="btn btn-wjs btn-sm">免费注册</a>
+						<a href="#" data-toggle="modal" data-target="#login">登录</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-main navbar-static-top" data-spy="affix" data-offset-top="40" data-offset-bottom="200">  
+		<!-- data-offset-top是指滚动多少距离后才吸顶 -->
+			<div class="container">
+			    <div class="navbar-header">
+			    	<!-- 汉堡菜单 data-target指向一个选择器 -->
+			      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_list" aria-expanded="false">
+			        	<span class="sr-only">切换菜单</span>
+			        	<!-- sr-only类名只在浏览器阅读模式显示 在页面不显示 -->
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			      	</button>
+			      	<a href="#">
+			      		<i class="icon icon-icon"></i>
+			      		<i class="icon icon-logo"></i>
+			      	</a>
+			    </div>	
+				<div class="collapse navbar-collapse" id="nav_list">
+					<ul class="nav navbar-nav">
+						<li><a href="#">我要借款</a></li>
+						<li><a href="#">我要投资</a></li>
+						<li><a href="#">平台介绍</a></li>
+						<li><a href="#">新手专区</a></li>
+						<li><a href="#">最新动态</a></li>
+						<li><a href="#">微论坛</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right hidden-sm">
+						<li><a href="#">个人中心</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- /头部区域 -->
+
+	<!-- 广告区域 -->
+	<section id="ad" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#ad" data-slide-to="0" class="active"></li>
+	    <li data-target="#ad" data-slide-to="1"></li>
+	    <li data-target="#ad" data-slide-to="2"></li>
+	    <li data-target="#ad" data-slide-to="3"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides轮播项 -->
+	  <div class="carousel-inner" role="listbox">
+	    <div class="item active" data-image-lg="img/1.jpg" data-image-xs="img/01.jpg"></div>
+	    <div class="item" data-image-lg="img/2.jpg" data-image-xs="img/02.jpg"></div>
+	    <div class="item" data-image-lg="img/3.jpg" data-image-xs="img/03.jpg"></div>
+	    <div class="item" data-image-lg="img/4.jpg" data-image-xs="img/04.jpg"></div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#ad" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#ad" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</section>
+	<!-- /广告区域 -->
+
+	<!-- 特色区域 -->
+	<section id="tese">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+						<div class="media">
+						  <div class="media-left">
+						    <i class="icon icon-tese1"></i>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">支付交易保障</h4>
+						    <p>银联支付全程保障安全</p>
+						  </div>
+						</div>	
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+					    <div class="media">
+						  <div class="media-left">
+						    <i class="icon icon-tese2"></i>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">平台财产安全</h4>
+						    <p>有PICC保驾护航</p>
+						  </div>
+						</div>	
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+						<div class="media">
+						  <div class="media-left">
+						    <i class="icon icon-tese3"></i>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">交易安全</h4>
+						    <p>由中国人寿财险对借贷人承</p>
+						  </div>
+						</div>	
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+						<div class="media">
+						  <div class="media-left">
+						    <i class="icon icon-tese4"></i>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">安全保障</h4>
+						    <p>独创八层安全保障机制</p>
+						  </div>
+						</div>	
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+						<div class="media">
+						  <div class="media-left">
+						    <i class="icon icon-tese5"></i>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">支付交易保障</h4>
+						    <p>银联支付全程保障安全</p>
+						  </div>
+						</div>	
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<a href="#">
+						<div class="media">
+						  <div class="media-left">
+						    <i class="icon icon-tese6"></i>
+						  </div>
+						  <div class="media-body">
+						    <h4 class="media-heading">联合信息发布</h4>
+						    <p通过路透社共同发布利率指数报</p>
+						  </div>
+						</div>		
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /特色区域 -->
+
+	<!-- 预约区域 -->
+	<section id="book">
+		<div class="container">
+			<div class="pull-left">
+				<i class="icon icon-clock"></i>
+				现在有
+				<span>458</span>
+				人在排队，累计预约交易成功
+				<span>7459</span>
+				次。什么是预约投标？
+				<a href="#">立即预约</a>
+			</div>
+			<div class="pull-right hidden-xs">
+				<i class="icon icon-dv"></i>
+				微金所企业宣传片
+			</div>
+		</div>
+	</section>
+	<!-- /预约区域 -->
+
+	<!-- 商品区域 -->
+	<section id="products">
+		<div class="container">
+		  <div class="ulScroller">
+			<!-- Nav tabs -->
+			<!-- role属性表示该元素的功能 aria-controls指向对应的tab内容 -->
+			<ul class="nav nav-tabs" role="tablist">
+			 	<li role="presentation" class="active"><a href="#tab_1" aria-controls="tab_1" role="tab" data-toggle="tab">特别推荐</a></li>
+			  	<li role="presentation"><a href="#tab_2" aria-controls="tab_2" role="tab" data-toggle="tab">微投资</a></li>
+			 	<li role="presentation"><a href="#tab_3" aria-controls="tab_3" role="tab" data-toggle="tab">微小宝</a></li>
+			  	<li role="presentation"><a href="#tab_4" aria-controls="tab_4" role="tab" data-toggle="tab">微消费</a></li>
+			  	<li role="presentation"><a href="#tab_5" aria-controls="tab_5" role="tab" data-toggle="tab">微福利</a></li>
+			 	<li role="presentation"><a href="#tab_6" aria-controls="tab_6" role="tab" data-toggle="tab">微金宝</a></li>
+			  	<li role="presentation"><a href="#tab_7" aria-controls="tab_7" role="tab" data-toggle="tab">微转让</a></li>
+			  	<li role="presentation" class="pull-right hidden-xs"><a href="#">更多</a></li>
+			</ul>
+		  </div>
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    <div class="tab-pane active" id="tab_1">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="panel panel-main hot">
+							<div class="panel-heading">
+								<p class="eight"><strong>8</strong><sub>%</sub></p>
+								<p>年利率</p>
+							</div>
+							<div class="panel-body">
+							    <h4>新手体验标0650期</h4>
+								<div class="row">
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				 
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="panel panel-main pass">
+							<div class="panel-heading">
+								<p class="cities">
+									<a href="#" class="jing" data-toggle="tooltip" data-placement="top" title="北京">京</a>
+									<a href="#" class="hu" data-toggle="tooltip" data-placement="top" title=" 上海">沪</a>
+									<!-- 上海显示一个上一个下？？？ -->
+								</p>
+								<p class="eight"><strong>8</strong><sub>%</sub></p>
+								<p>年利率</p>
+							</div>
+							<div class="panel-body">
+							    <h4>新手体验标0650期</h4>
+								<div class="row">
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				 
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="panel panel-main">
+							<div class="panel-heading">
+								<p class="eight"><strong>8</strong><sub>%</sub></p>
+								<p>年利率</p>
+							</div>
+							<div class="panel-body">
+							    <h4>新手体验标0650期</h4>
+								<div class="row">
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				 
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="panel panel-main">
+							<div class="panel-heading">
+								<p class="eight"><strong>8</strong><sub>%</sub></p>
+								<p>年利率</p>
+							</div>
+							<div class="panel-body">
+							    <h4>新手体验标0650期</h4>
+								<div class="row">
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				 
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="panel panel-main">
+							<div class="panel-heading">
+								<p class="eight"><strong>8</strong><sub>%</sub></p>
+								<p>年利率</p>
+							</div>
+							<div class="panel-body">
+							    <h4>新手体验标0650期</h4>
+								<div class="row">
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				 
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="panel panel-main">
+							<div class="panel-heading">
+								<p class="eight"><strong>8</strong><sub>%</sub></p>
+								<p>年利率</p>
+							</div>
+							<div class="panel-body">
+							    <h4>新手体验标0650期</h4>
+								<div class="row">
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+									<div class="col-xs-6">
+										<p class="grey">起投金额<span class="yuan">(元)</span></p>
+										<p><strong>5</strong>万</p>				 
+										<p class="grey">最高金额<span class="yuan">(元)</span></p>
+										<p><strong>1000</strong>万</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="tab_2">南</div>
+		    <div role="tabpanel" class="tab-pane" id="tab_3">西</div>
+		    <div role="tabpanel" class="tab-pane" id="tab_4">北</div>
+		    <div role="tabpanel" class="tab-pane" id="tab_5">中</div>
+		    <div role="tabpanel" class="tab-pane" id="tab_6">發</div>
+		    <div role="tabpanel" class="tab-pane" id="tab_7">白板</div>
+		  </div>
+		</div>		
+	</section>
+	<!-- /商品区域 -->
+
+	<!-- 新闻区域 -->
+	<section id="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-3 col-sm-2">
+					<div class="news_title">全部新闻</div>
+				</div>
+				<div class="col-sm-1">
+					<ul class="nav nav-pills nav-stacked">
+					  	<li role="presentation" class="active" data-title="全部新闻"><a href="#news01" role="tab" data-toggle="tab"><i class="icon icon-news01"></i></a></li>
+					  	<li role="presentation" data-title="行业新闻"><a href="#news02" role="tab" 	data-toggle="tab"><i class="icon icon-news02"></i></a></li>
+					  	<li role="presentation" data-title="金融新闻"><a href="#news03" role="tab" 	data-toggle="tab"><i class="icon icon-news03"></i></a></li>
+					  	<li role="presentation" data-title="媒体新闻"><a href="#news04" role="tab" data-toggle="tab"><i class="icon icon-news04"i></i></a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active fade in" id="news01">
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						</div>
+					    <div role="tabpanel" class="tab-pane fade" id="news02">
+						 
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+							<p class="text-center">微金所发福利啦，快来抢！！！！</p>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="news03">
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+							<p class="text-center">微金所发钱啦，快来抢！！！！</p>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade" id="news04">
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+						    <p class="text-center">微金所发钱啦，快来抢！！！！</p>
+					    </div>
+	  				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /新闻区域 -->
+
+	<!-- 底部区域 -->
+	<section id="partner">
+		<div class="container">
+			<h3>合作伙伴</h3>
+			<div class="partners">
+				<div class="row">
+					<ul class="col-sm-6 col-xs-12">
+					  <li><a href="#"><i class="icon icon-partner01"></i></a></li>
+					  <li><a href="#"><i class="icon icon-partner02"></i></a></li>
+					  <li><a href="#"><i class="icon icon-partner03"></i></a></li>
+					  <li><a href="#"><i class="icon icon-partner04"></i></a></li>
+					</ul>
+					<ul class="col-sm-6 col-xs-12">
+					  <li><a href="#"><i class="icon icon-partner05"></i></a></li>
+					  <li><a href="#"><i class="icon icon-partner06"></i></a></li>
+					  <li><a href="#"><i class="icon icon-partner07"></i></a></li>
+					  <li><a href="#"><i class="icon icon-partner08"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /底部区域 -->
+
+	<!-- 模态框区域 -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">登录</h4>
+	      </div>
+	      <div class="modal-body">
+			<form class="form-horizontal">
+			  <div class="form-group">
+			    <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+			    <div class="col-sm-10">
+			      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+			    <div class="col-sm-10">
+			      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <div class="checkbox">
+			        <label>
+			          <input type="checkbox"> 记住密码
+			        </label>
+			      </div>
+			    </div>
+			  </div>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-wjs" data-dismiss="modal">登录</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+</body>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</html>
+
+
+<!-- 问题总结 -->
+<!-- 1.  data-spy="affix" data-offset-top="40"无效？不吸顶  *051*  -->
+<!-- 解决：需要给该元素设置top=0  -->
+
+<!-- 2.  汉堡按钮展开时覆盖而不是向下顶开 并且没有背景      *055*  -->
+<!-- 解决：添加背景... -->
+
+<!-- 3.  tooltips显示上海一个字上一个字下？？？             *274*  -->
+
+<!-- 4.  整个页面可以往右移动？？                                  -->
+<!-- 解决：给body添加overflow-x：hidden -->

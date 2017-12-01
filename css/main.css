@@ -1,0 +1,704 @@
+@charset "utf-8";
+
+body{
+	font-family: "Helvetica Neue", Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+	overflow-x: hidden;
+}
+
+/*引入字体图标*/
+@font-face {
+  font-family: 'wjs';
+  src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), 
+  	   url('../font/MiFie-Web-Font.svg') format('svg'), 
+  	   url('../font/MiFie-Web-Font.ttf') format('truetype'), 
+  	   url('../font/MiFie-Web-Font.woff') format('woff');
+}
+
+
+/* 图标部分 */
+.icon {
+  font-family: 'wjs';
+  font-style: normal;
+  font-weight: normal;
+}
+
+.icon-mobilephone::before{
+	content: "\e908";
+	font-size: 15px;
+}
+
+.icon-telephone::before{
+	content: "\e909";
+	font-size: 15px;
+}
+
+.icon-mobilephone::before{
+	content: "\e908";
+	font-size: 15px;
+}
+
+.icon-telephone::before{
+	content: "\e909";
+	font-size: 15px;
+}
+
+.icon-logo::before {
+  content: "\e93e";
+  font-size: 29px;
+  vertical-align: middle;
+  color: #333;
+}
+
+.icon-icon::before {
+  content: "\e920";
+  vertical-align: middle;
+  font-size: 47px;
+  color: #e93323;
+}
+
+.icon-tese1::before{
+	content: "\e907";
+}
+
+.icon-tese2::before{
+	content: "\e903";
+}
+
+.icon-tese3::before{
+	content: "\e901";
+}
+
+.icon-tese4::before{
+	content: "\e900";
+}
+
+.icon-tese5::before{
+	content: "\e904";
+}
+
+.icon-tese6::before{
+	content: "\e902";
+}
+
+.icon-clock::before{
+	content: "\e906";
+}
+
+.icon-dv::before{
+	content: "\e905";
+}
+
+.icon-news01::before{
+	content: "\e90e";
+}
+
+.icon-news02::before{
+	content: "\e90f";
+}
+
+.icon-news03::before{
+	content: "\e910";
+}
+
+.icon-news04::before{
+	content: "\e911";
+}
+
+.icon-partner01::before{
+	content: "\e946";
+}
+
+.icon-partner02::before{
+	content: "\e92f";
+}
+
+.icon-partner03::before{
+	content: "\e92e";
+}
+
+.icon-partner04::before{
+	content: "\e92a";
+}
+
+.icon-partner05::before{
+	content: "\e929";
+}
+
+.icon-partner06::before{
+	content: "\e92b";
+}
+
+.icon-partner07::before{
+	content: "\e92c";
+}
+
+.icon-partner08::before{
+	content: "\e92d";
+}
+
+
+
+
+
+/*头部区域*/
+
+#header{
+
+}
+
+#header nav{
+	height: 69px;
+	width: 100%;
+	top: 0;
+}
+
+#header a:hover{
+	text-decoration: none;
+}
+
+#header > .topbar{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #c0c0c0;
+	color: #888;
+	line-height: 40px;
+}
+
+#header > .topbar > .container > .row > div{
+	height: 40px;
+	text-align: center;
+}
+
+#header > .topbar > .container > .row > div + div{
+	border-left: 1px solid #c0c0c0;
+}
+
+#header > .topbar > .container > .row  > div > a{
+	color: #888;
+}
+
+#header > .topbar > .container > .row  > div > a:hover{
+	text-decoration: none;
+}
+
+#header .mobile-link img{
+	z-index: 1001;
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin-left: -60px; 
+
+}
+
+#header .mobile-link:hover img{
+	display: block;
+}
+
+#header > .topbar > .container > .row > div > .btn-wjs{
+	color: #fff;
+	margin-right: 5px;
+}
+
+.navbar-header a{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.navbar-header button{
+	margin-top: 20px;
+}
+
+#nav_list li a {
+	line-height: 37px;
+}
+
+#nav_list li:hover{
+	border-bottom: 2px solid #e93323;
+}
+
+
+
+/* 广告区域 */
+#ad > .carousel-inner > .item {
+	background-repeat: no-repeat;
+
+	background-position: center center;
+}
+
+/* 不能用410px高度时 需要通过媒体查询的方式来控制 */
+
+@media (min-width: 768px){
+	/* 当屏幕宽度大于768时（此时使用大图）才会执行
+	   当小于768时 .item盒子没有高度 大图自然显示不出来 
+	   根据更好的用户体验 
+	 */
+	#ad > .carousel-inner > .item{
+		height: 410px;
+	}
+}
+
+#ad > .carousel-inner > .item > img{
+	width: 100%;
+}
+
+
+/*特色区域*/
+#tese{
+	padding: 50px 0 50px 0;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#tese a{
+	text-decoration: none;
+	color: #777;
+}
+
+#tese a:hover{
+	color: #ccc;
+}
+
+#tese i{
+	font-size: 34px;
+}
+
+#tese > .container > .row > div{
+	padding: 20px 0 20px 0;
+}
+
+#tese .row{
+	padding-left: 100px;
+}
+
+
+/*预约区域*/
+#book{
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#book i{
+	font-size: 20px;
+}
+
+#book > .container span{
+	color: #e93233;
+}
+
+#book a{
+    border-bottom: 1px dashed #e93233;
+    color: #e92322;
+    text-decoration: none;
+}
+
+
+/*产品部分*/
+#products{
+	background-color: #f0f0f0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#products > .container > .ulScroller > .nav-tabs{
+	border-bottom-color: #ccc;
+}
+
+#products > .container > .ulScroller > .nav-tabs > li {
+	font-size: 16px;
+}
+
+#products > .container > .ulScroller > .nav-tabs > li > a{
+	color: #666;
+}
+
+#products > .container > .ulScroller > .nav-tabs > li > a:hover{
+	color: #000;
+}
+
+
+/* 新闻部分 */
+#news{
+	padding-top: 50px;
+}
+
+#news .news_title{
+	font-size: 18px;
+	font-weight: 400;
+	border-bottom: 1px dashed #c0c0c0;
+	text-align: center;
+	line-height: 50px;
+}
+
+#news .news_title::after{
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 1px solid #c0c0c0;
+	display: block;
+	position: absolute;
+	right: 5px;
+	bottom: -5px;
+}
+
+#news i{
+	font-size: 25px;
+
+}
+
+#news p{
+	line-height: 20px;
+}
+
+#news  ul{
+	position: relative;
+}
+
+#news ul li a{
+	width: 50px;
+	height: 50px;
+	display: block;
+}
+
+
+
+/*合作部分*/
+#partner{
+	padding-top: 80px;
+	padding-bottom: 60px;
+	overflow: hidden;
+}
+
+#partner h3{
+	text-align: center;
+
+}
+
+#partner ul{
+	padding-left: 0;
+	position: relative;
+}
+
+
+#partner .partners{
+	width: 750px;
+	/* height: 140px; */
+	position: relative;
+	left: 50%;
+	margin-left: -350px;
+	overflow: hidden;
+}
+
+#partner ul li{
+	float: left;
+	list-style-type: none;
+	
+}
+
+
+
+#partner ul li + li{
+	padding-left: 50px;
+}
+
+#partner ul li a:hover{
+	text-decoration: none;
+}
+
+#partner ul li i{
+	font-size: 50px;
+	color: #888;
+}
+
+#partner ul li i:hover{
+	color: #2bb289;
+
+}
+
+
+
+/* 扩展部分 */
+
+/*登录按钮*/
+.btn-wjs { 
+  color: #FFFFFF; 
+  background-color: #E93323; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-wjs:hover, 
+.btn-wjs:focus, 
+.btn-wjs:active, 
+.btn-wjs.active, 
+.open .dropdown-toggle.btn-wjs { 
+  color: #FFFFFF; 
+  background-color: #e93323; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-wjs:active, 
+.btn-wjs.active, 
+.open .dropdown-toggle.btn-wjs { 
+  background-image: none; 
+} 
+ 
+.btn-wjs.disabled, 
+.btn-wjs[disabled], 
+fieldset[disabled] .btn-wjs, 
+.btn-wjs.disabled:hover, 
+.btn-wjs[disabled]:hover, 
+fieldset[disabled] .btn-wjs:hover, 
+.btn-wjs.disabled:focus, 
+.btn-wjs[disabled]:focus, 
+fieldset[disabled] .btn-wjs:focus, 
+.btn-wjs.disabled:active, 
+.btn-wjs[disabled]:active, 
+fieldset[disabled] .btn-wjs:active, 
+.btn-wjs.disabled.active, 
+.btn-wjs[disabled].active, 
+fieldset[disabled] .btn-wjs.active { 
+  background-color: #E93323; 
+  border-color: #FFFFFF; 
+} 
+ 
+.btn-wjs .badge { 
+  color: #E93323; 
+  background-color: #FFFFFF; 
+}
+
+
+
+.navbar-main {
+  background-color: #fff;
+  border-color: #e7e7e7;
+}
+.navbar-main .navbar-brand {
+  color: #777;
+}
+.navbar-main .navbar-brand:hover,
+.navbar-main .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-main .navbar-text {
+  color: #777;
+}
+.navbar-main .navbar-nav > li > a {
+  color: #777;
+}
+.navbar-main .navbar-nav > li > a:hover,
+.navbar-main .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.navbar-main .navbar-nav > .active > a,
+.navbar-main .navbar-nav > .active > a:hover,
+.navbar-main .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-main .navbar-nav > .disabled > a,
+.navbar-main .navbar-nav > .disabled > a:hover,
+.navbar-main .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-main .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-main .navbar-toggle:hover,
+.navbar-main .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-main .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-main .navbar-collapse,
+.navbar-main .navbar-form {
+  border-color: #e7e7e7;
+  background-color: #fff;
+}
+.navbar-main .navbar-nav > .open > a,
+.navbar-main .navbar-nav > .open > a:hover,
+.navbar-main .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-main .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-main .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-main .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-main .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-main .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-main .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-main .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-main .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-main .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-main .navbar-link {
+  color: #777;
+}
+.navbar-main .navbar-link:hover {
+  color: #333;
+}
+.navbar-main .btn-link {
+  color: #777;
+}
+.navbar-main .btn-link:hover,
+.navbar-main .btn-link:focus {
+  color: #333;
+}
+.navbar-main .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-main .btn-link:hover,
+.navbar-main .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-main .btn-link:focus {
+  color: #ccc;
+}
+
+
+
+.panel-main {
+	color: #777;
+	margin: 20px 0 20px 0;
+	box-shadow: 0px 0px 6px #ccc inset;
+}
+
+.panel-main.hot{
+	background-color: #e93233;
+	color: #fff;
+}
+
+.panel-main.hot::before{
+	content:"\e915";
+	font-family: "weijinsuo";
+	position: absolute;
+	font-size: 42px;
+	top: 11px;
+	left: 15px;
+}
+
+.panel-main.hot > .panel-heading strong , 
+.panel-main.hot > .panel-heading sub{
+	color: #fff;
+}
+
+.panel-main.pass{
+	background-color: #e0e0e0;
+	color: #777;
+}
+
+.panel-main.pass > .panel-body > .row p.grey{
+	color: #9c9c9c;
+}
+
+.panel-main.pass > .panel-body::before{
+	content: "\e926";
+	font-family: "weijinsuo";
+	font-size: 100px;
+	position: absolute;
+	color: #e93233;
+	top: 30px;
+	left: 125px;
+}
+
+.panel-main.pass > .panel-heading .cities{
+	position: absolute;
+	text-align: center;
+	margin-top: 15px;
+	margin-left: 17px;
+}
+
+.panel-main.pass > .panel-heading .cities a{
+	width: 18px;
+	height: 18px;
+	display: block;
+	float: left;
+	line-height: 18px;
+	
+}
+
+.panel-main.pass > .panel-heading .cities .jing{
+	color: #e93233;
+	border: 1px solid #e93233;
+	margin-right: 10px;
+}
+.panel-main.pass > .panel-heading .cities .hu{
+	color: #399;
+	border: 1px solid #399;
+}
+
+.panel-main.pass > .panel-heading .cities a:hover{
+	text-decoration: none;
+}
+
+.panel-main > .panel-heading {
+    border-left: 2px dashed #c0c0c0;
+	float: right;
+  	height: 150px;
+	width: 120px;
+	position: relative;
+}
+
+
+.panel-main > .panel-heading .eight{
+	margin-top: 37px;
+}
+
+.panel-main > .panel-heading::before,
+.panel-main > .panel-heading::after{
+	content: '';
+	width: 20px;
+	height: 16px;
+	display: block;
+	border-radius: 8px;
+	background-color: #f0f0f0;
+	position: absolute;
+}
+.panel-main > .panel-heading::before{
+	top: -10px;
+	right: 110px;
+}
+.panel-main > .panel-heading::after{
+	bottom: -10px;
+	left: -10px;
+}
+
+.panel-main > .panel-heading p{
+	text-align: center;
+}
+.panel-main > .panel-heading strong{
+	font-size: 30px;
+	color: #e93233;
+}
+
+.panel-main > .panel-heading sub{
+	color: #e93233;
+}
+
+.panel-main > .panel-body {
+	height: 150px;
+	margin-right: 120px;
+}
+
+.panel-main > .panel-body > .row > div{
+	padding: 0px 5px 0 5px;
+}
+
+.panel-main > .panel-body > .row p{
+	margin-bottom: 0;
+}
+
+.panel-main > .panel-body > .row p.grey{
+	color: #ccc;
+}
